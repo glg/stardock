@@ -29,7 +29,8 @@ apt install -y docker-ce jq python parallel awscli
 STARDOCK_INSTALL_DIR="/var/stardock"
 
 mkdir -p "${STARDOCK_INSTALL_DIR}"
-git clone 'https://github.com/bhudgens/stardock.git' "${STARDOCK_INSTALL_DIR}"
+git clone 'https://github.com/glg/stardock.git' "${STARDOCK_INSTALL_DIR}"
+git checkout fix-ecr
 
 pushd "${STARDOCK_INSTALL_DIR}" > /dev/null
 
